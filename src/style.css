@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -19,17 +19,21 @@ body {
 
 
 /* FÖR TEST */
-#testKnapp{
-    display: block;
+#testKnapp {
+    display: none;
     position: absolute;
     bottom: 50%;
     left: 5%;
     height: 40px;
     width: auto;
 }
+
 /* FÖR TEST */
 
-input, select, textarea, button {
+input,
+select,
+textarea,
+button {
     display: block;
     margin: 9px 0px;
     width: 80%;
@@ -45,7 +49,8 @@ input, select, textarea, button {
     text-transform: uppercase;
 }
 
-#submit:hover, #submit:focus {
+#submit:hover,
+#submit:focus {
     outline: none;
     cursor: pointer;
     border-color: #fff;
@@ -56,16 +61,17 @@ input, select, textarea, button {
     grid-template-columns: var(--side-width) auto var(--side-width);
     grid-template-rows: minmax(var(--main-height), auto);
     margin-top: var(--nav-height);
-    margin-bottom: var(--footer-height);  
-    
+    margin-bottom: var(--footer-height);
+
 }
 
 .grid-item {
-    
+
     align-items: center;
 }
 
-#left, #right {
+#left,
+#right {
     right: 0;
     font-size: 0.55em;
     font-style: italic;
@@ -76,7 +82,8 @@ input, select, textarea, button {
     /* padding: 2vw; */
 }
 
-#left blockquote, #right blockquote {
+#left blockquote,
+#right blockquote {
     position: fixed;
     width: calc(var(--side-width) - calc(var(--blockquote-margin) * 2));
     top: 50vh;
@@ -84,7 +91,8 @@ input, select, textarea, button {
     line-height: 1.5;
 }
 
-#left blockquote:hover, #right blockquote:hover {
+#left blockquote:hover,
+#right blockquote:hover {
     cursor: pointer;
 }
 
@@ -114,15 +122,16 @@ blockquote span {
     padding: 5%;
     font-size: 0.55em;
     padding-bottom: var(--footer-height);
-    border-width: 0 3px 0px 3px; 
+    border-width: 0 3px 0px 3px;
     border-style: solid;
-    border-color: rgba(255,255,255,0.2);
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
-.main h1{
+.main h1 {
     font-size: 1.3em;
 }
-.main h2{
+
+.main h2 {
     font-size: 1.2em;
 }
 
@@ -141,7 +150,7 @@ blockquote span {
     background: #888;
 }
 
-hr{
+hr {
     border-color: #222;
     margin: 4vh 0;
 }
@@ -157,14 +166,15 @@ article img {
     width: 10em;
 }
 
-nav, footer {
+nav,
+footer {
     position: fixed;
     width: 100%;
     background: #000;
     text-align: center;
 }
 
-nav{
+nav {
     top: 0;
     min-height: var(--nav-height);
     z-index: 2;
@@ -174,7 +184,7 @@ nav{
     display: inline-block;
 }
 
-.links a{
+.links a {
     text-transform: uppercase;
     color: #fff;
     text-decoration: none;
@@ -186,7 +196,8 @@ nav{
     outline: none;
 }
 
-.links a:hover, .links a:focus {
+.links a:hover,
+.links a:focus {
     border-bottom: 2px solid rgba(221, 221, 221, 0.6);
     /* text-decoration-line: underline;
     text-decoration-color: rgba(221, 221, 221, 0.6);
@@ -206,7 +217,7 @@ footer {
     height: var(--footer-height);
 }
 
-footer a{
+footer a {
     text-decoration: none;
 }
 
@@ -221,14 +232,17 @@ footer a img {
 
 footer img:hover,
 footer a:focus img {
-    outline: 2px solid rgba(255, 255, 255, 0.9);  
+    outline: 2px solid rgba(255, 255, 255, 0.9);
 }
 
-#images, #albums, #contact {
+#images,
+#albums,
+#contact {
     display: none;
 }
 
-.show, .kontakt {
+.show,
+.kontakt {
     position: fixed;
     top: 50vh;
     left: 50vw;
@@ -241,14 +255,14 @@ footer a:focus img {
     visibility: hidden;
     height: auto;
     width: auto;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 5%;
     border-radius: 4px;
 }
 
-.kontakt div{
-    background: rgba(0,0,0,1);
+.kontakt div {
+    background: rgba(0, 0, 0, 1);
     padding: 10%;
     text-transform: uppercase;
 }
@@ -256,7 +270,7 @@ footer a:focus img {
 
 
 /* MEDIAQUERY */
-@media (max-width: 600px){
+@media (max-width: 600px) {
     :root {
         --nav-height: 22vh;
         --footer-height: 12vh;
@@ -265,13 +279,14 @@ footer a:focus img {
         --side-width: 20%;
         --blockquote-margin: 1vw;
     }
-    
-    
-    .grid-container{
+
+
+    .grid-container {
         display: block;
     }
 
-    #left, #right{
+    #left,
+    #right {
         display: none;
     }
 
@@ -284,7 +299,7 @@ footer a:focus img {
         line-height: 1.5;
     }
 
-    .links a{
+    .links a {
         padding-top: 10px;
     }
 
