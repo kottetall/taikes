@@ -1,5 +1,4 @@
-const band = [
-    {
+const band = [{
         rubrik: "About us",
         bild: {
             alt: "Picture of the band",
@@ -52,10 +51,9 @@ const band = [
 ]
 
 
-const citat = [
-    {
+const citat = [{
         album: "Apologize to all your friends",
-        titel: "EVERYBODY DIES", 
+        titel: "EVERYBODY DIES",
         text: `the wake of death, seems to surround and bless,<br>
         because now, they're just killing you instead, but it ends everybody`
     },
@@ -265,12 +263,12 @@ const citat = [
     }
 ]
 
-const album = [
-    {
+const album = [{
         titel: "Theory of Mind",
         år: "",
-        img:"img/album/theoryOfMind160x160.jpg",
-        text:``,
+        img: "img/album/theoryofmind160x160.jpg",
+        spotify: "https://open.spotify.com/album/2HTw2Kk0p2i69h3YmxSkuv?si=Nwq4VuXBSKm6DZdu6lMipw",
+        text: ``,
         låtar: [
             "My Kind",
             "Low",
@@ -290,26 +288,28 @@ const album = [
     {
         titel: "Apologize to all your friends",
         år: "2010",
-        img:"img/album/apologizeToAllYourFriends160x160.jpg",
-        text:``,
+        img: "img/album/apologizetoallyourfriends160x160.jpg",
+        spotify: "https://open.spotify.com/album/7yN6Y141dSrpob5lL7E9ia?si=Yl85dMEVS0C3jp-AMTGAyg",
+        text: ``,
         låtar: [
             "Chloroform",
             "Bones",
             "Everybody Dies",
-            "Get It Right", 
+            "Get It Right",
             "Daft Anthem",
-            "Memento", 
-            "Aquatic", 
-            "Sever", 
-            "Violator", 
-            "Pulse" 
+            "Memento",
+            "Aquatic",
+            "Sever",
+            "Violator",
+            "Pulse"
         ]
     },
     {
         titel: "Bones(single)",
         år: "2009",
-        img:"img/album/bones160x160.jpg",
-        text:`First song to be released from the upcoming album "Apologize to all your friends". Cover design by Marcus Daun.`,
+        img: "img/album/bones160x160.jpg",
+        spotify: "https://open.spotify.com/album/2Y8Rpl0qOWkFAHYiQ3tPo3?si=D5PL-mnfQnypSApKYISftg",
+        text: `First song to be released from the upcoming album "Apologize to all your friends". Cover design by Marcus Daun.`,
         låtar: [
             "Bones"
         ]
@@ -317,8 +317,9 @@ const album = [
     {
         titel: "Dreamcatcher",
         år: "",
-        img:"img/album/dreamcatcher160x160.jpg",
-        text:`The first full-length album by Taikes consists of nine brand new songs and four remastered songs from the "We've all.." CD. Recorded by Peter Heddelin and Taikes in studio K3, Uddevalla.`,
+        img: "img/album/dreamcatcher160x160.jpg",
+        spotify: "https://open.spotify.com/album/77qnAatKhozIe6aIlJDDPC?si=DFBv4sA9Q124WDDcj1K3wg",
+        text: `The first full-length album by Taikes consists of nine brand new songs and four remastered songs from the "We've all.." CD. Recorded by Peter Heddelin and Taikes in studio K3, Uddevalla.`,
         låtar: [
             "Borderline",
             "As We Left",
@@ -338,9 +339,9 @@ const album = [
     {
         titel: "Unplugged and B-sides",
         år: "2007",
-        img:"img/album/missingPic160x160.jpg",
-        text:`There are many songs by Taikes that never have travelled outside the rehearsal room, and many that have become really good acoustic versions of as well. For 18 weeks in a row during autumn 2007 while Johan was in Mexico and Taikes could perform no gigs, every week there was a new song available for download for everyone to enjoy.`,
-        låtar: [      
+        img: "img/album/missingPic160x160.jpg",
+        text: `There are many songs by Taikes that never have travelled outside the rehearsal room, and many that have become really good acoustic versions of as well. For 18 weeks in a row during autumn 2007 while Johan was in Mexico and Taikes could perform no gigs, every week there was a new song available for download for everyone to enjoy.`,
+        låtar: [
             "Burned Out - acoustic",
             "Deadbeat - acoustic",
             "Angel Eyes - acoustic",
@@ -364,8 +365,8 @@ const album = [
     {
         titel: "We've all lived through this",
         år: "2006",
-        img:"img/album/weveAllLivedThroughThis160x160.jpg",
-        text:`After coming home from the gigs in Mexico, december 2005, Taikes knew it was about time to record all the new songs composed over the last nine months. As the two songs 'Masterplan' and 'Best of Me' made Taikes the winners of both Mölndalsrocken and Rock of Bohuslän in February, giving them recording time in the great studio 'K3' in Uddevalla, the timing could not have been better. Recorded and mixed by Peter Heddelin and Taikes in March 2006.`,
+        img: "img/album/wevealllivedthroughthis160x160.jpg",
+        text: `After coming home from the gigs in Mexico, december 2005, Taikes knew it was about time to record all the new songs composed over the last nine months. As the two songs 'Masterplan' and 'Best of Me' made Taikes the winners of both Mölndalsrocken and Rock of Bohuslän in February, giving them recording time in the great studio 'K3' in Uddevalla, the timing could not have been better. Recorded and mixed by Peter Heddelin and Taikes in March 2006.`,
         låtar: [
             "Condemned",
             "Deadbeat",
@@ -378,8 +379,9 @@ const album = [
     {
         titel: "Life Support",
         år: "2005",
-        img:"img/album/lifeSupport160x160.jpg",
-        text:`This Taikes CD was at the time of its release also the best one so far according to themselves. There has been a lot of work put on the songs to make the sound and the atmosphere around them fit together smoothly. The songs 'Tumbling Down' and 'Angel Eyes' were Taikes' contribution at the Swedish national music contest 'Musik Direkt' where they qualified for the regional finals. Recorded, mixed and mastered by Linus Serholt and Taikes in Studio Vind, Horred, May 2005.`,
+        img: "img/album/lifesupport160x160.jpg",
+        spotify: "https://open.spotify.com/album/493bTm1w6zAD9VftUWhikk?si=JVLHRH6VQg-0j2-MIiXOag",
+        text: `This Taikes CD was at the time of its release also the best one so far according to themselves. There has been a lot of work put on the songs to make the sound and the atmosphere around them fit together smoothly. The songs 'Tumbling Down' and 'Angel Eyes' were Taikes' contribution at the Swedish national music contest 'Musik Direkt' where they qualified for the regional finals. Recorded, mixed and mastered by Linus Serholt and Taikes in Studio Vind, Horred, May 2005.`,
         låtar: [
             "Tumbling Down",
             "Angel Eyes",
@@ -389,8 +391,8 @@ const album = [
     {
         titel: "Saviour",
         år: "2005",
-        img:"img/album/saviour160x160.jpg",
-        text:`During early december 2004 it was all set for a new recording, the style of the songs perfected over the previous months. The popular 'Zolost' heading more towards emo rock, whereas the seven minute long 'Saviour' mixes a beautiful and calm verse with a heavier distorted chorus. This CD has been released in three different versions, though the audio tracks remain the same.`,
+        img: "img/album/saviour160x160.jpg",
+        text: `During early december 2004 it was all set for a new recording, the style of the songs perfected over the previous months. The popular 'Zolost' heading more towards emo rock, whereas the seven minute long 'Saviour' mixes a beautiful and calm verse with a heavier distorted chorus. This CD has been released in three different versions, though the audio tracks remain the same.`,
         låtar: [
             "Introverted",
             "Zolost",
@@ -402,8 +404,8 @@ const album = [
     {
         titel: "Demo 2",
         år: "2004",
-        img:"img/album/demo2160x160.jpg",
-        text:`Under a hectic schedule in an attempt to have the second CD released before 'Mölndalsrocken' in January 2004, the band finally managed to record a session in their own studio. In short, 'Demo 2'.`,
+        img: "img/album/demo2160x160.jpg",
+        text: `Under a hectic schedule in an attempt to have the second CD released before 'Mölndalsrocken' in January 2004, the band finally managed to record a session in their own studio. In short, 'Demo 2'.`,
         låtar: [
             "DeGeneration",
             "Now I know",
@@ -416,14 +418,14 @@ const album = [
     {
         titel: "Nothing More, Nothing Less",
         år: "2003",
-        img:"img/album/nothingMorNothingLess160x160.jpg",
-        text:`This first CD, recorded during two summer weeks in 2003, contains all Taikes' songs from the first year.`,
+        img: "img/album/nothingmorenothingless160x160.jpg",
+        text: `This first CD, recorded during two summer weeks in 2003, contains all Taikes' songs from the first year.`,
         låtar: [
             "Could it be Love",
             "Dark Rain",
             "Eventually",
             "Greedy",
-            "My Thoughts", 
+            "My Thoughts",
             "Reflections",
             "That's Fine"
         ]
