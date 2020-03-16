@@ -20,8 +20,11 @@ lista.forEach((x) => {
                 fyllNyheter();
                 visaBilder();
                 break;
+            case "gigs":
+                fyllGigs()
+                break
             case "images":
-                console.log("öppna bildruta");
+                fyllImages();
                 break;
             case "albums":
                 fyllAlbum();
@@ -37,16 +40,8 @@ lista.forEach((x) => {
 });
 
 
-//används för att testa funktioner. Knappen tas bort före live
-document.getElementById("testKnapp").addEventListener("click", (e) => {
-    // show();
-    // document.querySelector(".main").innerHTML = "";
-    visaKontakt();
-})
-
 setInterval(slumpCitat, 5000);
 
-// setInterval(slumpCitat, 1000);
 
 function slumpCitat(sida) {
     if (!sida) {
@@ -111,6 +106,83 @@ function fyllNyheter() {
     }
 }
 
+function fyllGigs() {
+    const main = document.querySelector(".main");
+    main.innerHTML = ""
+
+    const gigList = document.createElement("ul")
+    gigList.className = "gigList"
+    for (const spelning of spelningar) {
+        const {
+            datum,
+            namn,
+            plats
+        } = spelning
+
+        const anpassatDatum = prettyDate(datum)
+
+
+        const li = document.createElement("li")
+        li.innerHTML = `<span class="dateSpan">${anpassatDatum}</span>
+        <span class="nameSpan">${namn}</span>
+        <span class="placeSpan">${plats}</span>`
+        gigList.append(li)
+    }
+
+    main.append(gigList)
+}
+
+function prettyDate(yymmdd) {
+    let ymd = yymmdd.match(/(\d{2})/g)
+    return `20${ymd[0]}-${ymd[1]}-${ymd[2]}`
+}
+
+function fyllImages() {
+    const main = document.querySelector(".main");
+
+
+    let mainText = ""
+
+    for (const spelning of bilderSpelningar.reverse()) {
+        const {
+            namn,
+            plats,
+            datum,
+            antalBilder
+        } = spelning
+
+        let anpassatDatum = prettyDate(datum)
+
+        let thumbs = ""
+        for (let i = 0; i < antalBilder; i++) {
+            thumbs += `<a href="#"><img src="img/spelningar/${datum}/tn/a (${i+1}).jpg"></a>`
+        }
+
+        const text = `<div>
+        <h2>${namn}
+        <span>(${anpassatDatum})</span></h2>
+        <h3>${plats}</h3>
+        <div class="thumbs">${thumbs}</div>
+        
+        </div>
+        <hr>`
+
+        mainText = mainText + text
+    }
+
+    main.innerHTML = `<div class="gigPics">
+    ${mainText}
+    </div>`
+
+    let thumbBilder = document.querySelectorAll(".thumbs img");
+
+    for (let bild of thumbBilder) {
+        bild.addEventListener("click", (e) => {
+            show(e.toElement.src.replace("/tn", ""));
+        });
+    }
+}
+
 function fyllAlbum() {
     const main = document.querySelector(".main");
 
@@ -160,6 +232,7 @@ function show(bildKalla) {
     const bild = document.createElement("img");
     bild.setAttribute("src", bildKalla);
     show.appendChild(bild);
+    show.classList.add("showing")
     showOn = true;
 
     document.body.addEventListener("click", (e) => {
@@ -168,6 +241,7 @@ function show(bildKalla) {
         //lägg även till så esc funkar
         if (e.target.localName !== "img") {
             show.innerHTML = "";
+            show.classList.remove("showing")
         }
     });
 
@@ -208,7 +282,7 @@ for (koll of blockqutoeKoll) {
     });
 };
 
-function visaText(latTitel) {
+async function visaText(latTitel) {
     latTitel = latTitel.toUpperCase()
     const show = document.querySelector(".main");
     const placeholder = "*MISSING*";
@@ -235,5 +309,14 @@ function visaText(latTitel) {
     <h2>${album}</h2>
     <img src="${img}">
     <br>
-    ${text}`;
+    ${text}`
+
+    const status = await fetch(`/audio/${titel}.mp3`)
+    if (status.status === 200) {
+        show.innerHTML = show.innerHTML + `
+        <audio controls autoplay muted>
+            <source src="/audio/${titel}.mp3" type="audio/mp3">
+        </audio>`
+    }
+
 }

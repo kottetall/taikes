@@ -1,7 +1,8 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -9,17 +10,6 @@ body {
   color: #ddd;
 }
 
-/* FÖR TEST */
-#testKnapp {
-  display: none;
-  position: absolute;
-  bottom: 50%;
-  left: 5%;
-  height: 40px;
-  width: auto;
-}
-
-/* FÖR TEST */
 input,
 select,
 textarea,
@@ -53,7 +43,6 @@ button {
       grid-template-columns: 20% auto 20%;
   -ms-grid-rows: minmax(calc(100vh - (14vh + 8vh)), auto);
       grid-template-rows: minmax(calc(100vh - (14vh + 8vh)), auto);
-  margin-top: 14vh;
   margin-bottom: 8vh;
 }
 
@@ -111,6 +100,7 @@ blockquote span {
 }
 
 .main {
+  min-height: 100vh;
   height: calc(100% - 8vh);
   background: rgba(51, 51, 51, 0.9);
   padding: 5%;
@@ -144,10 +134,54 @@ blockquote span {
   background: #888;
 }
 
+.gigList {
+  list-style: none;
+}
+
+.gigList li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 50%;
+      grid-template-columns: 25% 25% 50%;
+  margin-top: 4px;
+}
+
+.gigPics h2 {
+  font-size: 2em;
+  margin: 1vh 0;
+}
+
+.gigPics h2 span {
+  font-size: 0.8em;
+}
+
+.thumbs {
+  margin-bottom: 2vh;
+}
+
+.thumbs img {
+  float: none;
+  margin-left: 2px;
+}
+
+.lat {
+  padding: 5px;
+}
+
 .lat:hover,
 .lat:focus {
   cursor: pointer;
   text-decoration: underline;
+}
+
+audio[controls] {
+  opacity: 0.5;
+  position: fixed;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 8vh;
+  left: 50%;
+  height: 30px;
 }
 
 hr {
@@ -168,10 +202,13 @@ article img {
 
 nav,
 footer {
-  position: fixed;
   width: 100%;
   background: #000;
   text-align: center;
+}
+
+footer {
+  position: fixed;
 }
 
 nav {
@@ -251,6 +288,27 @@ footer a:focus img {
           transform: translate(-50%, -50%);
   height: auto;
   width: auto;
+}
+
+.showing::after {
+  content: "X";
+  width: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  z-index: 1000;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+}
+
+.showing:hover::after {
+  cursor: pointer;
+}
+
+.show img {
+  max-height: 80vh;
+  max-width: 80vw;
 }
 
 .kontakt {
