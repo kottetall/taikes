@@ -210,7 +210,7 @@ function fyllAlbum() {
         let spotifyIndicator = "";
         if (skiva.spotify) {
             spotify = `href="${skiva.spotify}" target="_blank" class="albumlink"`
-            spotifyIndicator = `<img src="/img/ikoner/spotify.svg" alt="Spotify" class="albumcoverSpotify">`
+            spotifyIndicator = `<img src="img/ikoner/spotify.svg" alt="Spotify" class="albumcoverSpotify">`
         } else {
             spotify = `class="ingenLank"`
 
