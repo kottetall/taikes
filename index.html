@@ -5,12 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Grunge is still alive. Meet Taikes, a band whos goal is to spread the beautiful melodies, catchy riffs and heavy tones across the world. The band has it's roots in Nirvana and Pearl Jam but is inspired by modern band like Chevelle, Red and Placebo.">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="src/style.css">
     <title>Taikes</title>
 </head>
 
 <body>
+
+    <p class="errorMsg">This site is ment to work on modern web browsers using Javascript. <br>
+        <br>
+        If you're seeing this it
+        means you're
+        currently using a unsupported browser and/or have Javascript turned off. <br>
+        <br>
+        Please change browser and/or enable Javascript to get the full experience. Otherwise feel free to visit our
+        other channels. <br>
+        <br>
+        / Taikes
+
+    </p>
 
     <nav>
         <img src="img/loggaRED.png" alt="Logotype" class="logga">
@@ -25,85 +41,84 @@
 
     </nav>
 
-    <div class="grid-container">
-        <div id="left" class="grid-item">
-            <blockquote>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ad magni asperiores dolores minus
-                    corporis quas nobis voluptas molestiae aliquam excepturi, saepe maiores?
-                </p>
-                <span>temporibus obcaecati</span>
-            </blockquote>
+    <div class="site">
+
+        <div class="grid-container">
+            <div id="left" class="grid-item">
+                <blockquote>
+                    <p>
+                    </p>
+                    <span></span>
+                </blockquote>
+            </div>
+
+
+            <div id="center" class="grid-item">
+
+
+                <section class="main">
+
+                </section>
+
+            </div>
+
+            <div id="right" class="grid-item">
+                <blockquote>
+                    <p>
+
+                    </p>
+                    <span></span>
+                </blockquote>
+
+            </div>
         </div>
 
+        <div class="show"></div>
 
-        <div id="center" class="grid-item">
-
-
-            <section class="main">
-
-            </section>
-
-        </div>
-
-        <div id="right" class="grid-item">
-            <blockquote>
-                <p>
-                    Porro animi quod culpa repudiandae ad cumque, laboriosam enim, blanditiis illum
-                    ab aliquam.
-                </p>
-                <span>temporibus obcaecati</span>
-            </blockquote>
-
+        <div class="kontakt">
+            <div>
+                <h1>Contact</h1>
+                <form action="">
+                    <input type="text" name="name" placeholder="Your name...">
+                    <input type="email" name="email" placeholder="Your email...">
+                    <select id="subject" name="reason for contact">
+                        <option value="" disabled selected hidden>Reason for contact</option>
+                        <option value="booking">booking</option>
+                        <option value="order">order</option>
+                        <option value="feedback">feedback</option>
+                        <option value="bugg report">bugg report</option>
+                    </select>
+                    <textarea name="message" id="message" rows="10"></textarea>
+                    <button id="submit">send</button>
+                    <!-- Lägg till recap!!! -->
+                </form>
+            </div>
         </div>
     </div>
 
-    <div class="show">
-    </div>
-
-    <div class="kontakt">
-        <div>
-            <h1>Contact</h1>
-            <form action="">
-                <input type="text" name="name" placeholder="Your name...">
-                <input type="email" name="email" placeholder="Your email...">
-                <select id="subject" name="reason for contact">
-                    <option value="" disabled selected hidden>Reason for contact</option>
-                    <option value="booking">booking</option>
-                    <option value="order">order</option>
-                    <option value="feedback">feedback</option>
-                    <option value="bugg report">bugg report</option>
-                </select>
-                <textarea name="message" id="message" rows="10"></textarea>
-                <button id="submit">send</button>
-                <!-- Lägg till recap!!! -->
-            </form>
-        </div>
-    </div>
     <footer>
-        <a href="https://www.facebook.com/Taikes/" target="_blank">
+        <a href="https://www.facebook.com/Taikes/" target="_blank" rel="noopener">
             <img class="ikoner" src="img/ikoner/facebook.svg" alt="Facebook">
         </a>
-        <a href="http://myspace.com/taikes" target="_blank">
+        <a href="http://myspace.com/taikes" target="_blank" rel="noopener">
             <img class="ikoner" src="img/ikoner/myspace.svg" alt="MySpace">
         </a>
-        <a href="http://twitter.com/taikes" target="_blank">
+        <a href="http://twitter.com/taikes" target="_blank" rel="noopener">
             <img class="ikoner" src="img/ikoner/twitter.svg" alt="Twitter">
         </a>
-        <a href="https://www.apple.com/itunes/" target="_blank">
+        <a href="https://www.apple.com/itunes/" target="_blank" rel="noopener">
             <img class="ikoner" src="img/ikoner/applemusic.svg" alt="iTunes">
         </a>
-        <a href="https://open.spotify.com/artist/65bDY2mTXLVK0rVnxFiB3q" target="_blank">
+        <a href="https://open.spotify.com/artist/65bDY2mTXLVK0rVnxFiB3q" target="_blank" rel="noopener">
             <img class="ikoner" src="img/ikoner/spotify.svg" alt="Spotify">
         </a>
-        <a href="https://www.youtube.com/taikes" target="_blank">
+        <a href="https://www.youtube.com/taikes" target="_blank" rel="noopener">
             <img class="ikoner" src="img/ikoner/youtube.svg" alt="YouTube">
         </a>
     </footer>
 
 
-    <script src="src/news_en.js"></script>
-
+    <script defer src="src/news_en.js"></script>
     <script src="src/allaTexter.js"></script>
     <script src="src/data.js"></script>
     <script src="src/app.js"></script>

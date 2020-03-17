@@ -1,4 +1,6 @@
 window.onload = () => {
+    document.querySelector(".errorMsg").style.display = "none"
+    document.querySelector(".site").style.display = "block"
     fyllHome();
     visaBilder();
     slumpCitat("#left");
@@ -6,7 +8,6 @@ window.onload = () => {
 };
 
 
-// lyssnar om man trycker på länkarna för att komma till "de andra sidorna". Används enbart om modulgrej. Annars interna länkar alternativt specifika sidor för resp del
 const lista = document.querySelectorAll(".links a");
 lista.forEach((x) => {
     x.addEventListener("click", (e) => {
@@ -178,9 +179,16 @@ function fyllImages() {
 
     for (let bild of thumbBilder) {
         bild.addEventListener("click", (e) => {
-            show(e.toElement.src.replace("/tn", ""));
+            e.preventDefault()
+            const pos = calcPos(e)
+            console.log(e)
+            show(e.target.src.replace("/tn", ""), pos);
         });
     }
+}
+
+function calcPos(e) {
+    return e.view.scrollY + 20 + "px"
 }
 
 function fyllAlbum() {
@@ -190,27 +198,36 @@ function fyllAlbum() {
 
     for (let skiva of album) {
         const artikel = document.createElement("article");
+        artikel.className = "album"
         const hr = document.createElement("hr");
-        let latar = "<ol>";
+        let latar = `<ol class="latlista">`;
         for (lat of skiva.låtar) {
             latar += `<li class="lat">${lat}</li>`
         }
         latar += "</ol>"
 
         let spotify;
+        let spotifyIndicator = "";
         if (skiva.spotify) {
-            spotify = `href="${skiva.spotify}" target="_blank"`
+            spotify = `href="${skiva.spotify}" target="_blank" class="albumlink"`
+            spotifyIndicator = `<img src="/img/ikoner/spotify.svg" alt="Spotify" class="albumcoverSpotify">`
         } else {
             spotify = `class="ingenLank"`
+
+        }
+
+        let albumText = ""
+        if (skiva.text) {
+            albumText = `<p class="albumText">${skiva.text}</p>`
         }
 
         const text = `<h1>${skiva.titel}</h1>
         <a ${spotify}>
-        <img src="${skiva.img}" alt="${skiva.titel} coverart">
+        <img src="${skiva.img}" alt="${skiva.titel} coverart" class="albumcover">
+        ${spotifyIndicator}
         </a>
-        <br>
-        ${latar}<br>
-        ${skiva.text}`;
+        ${latar}
+        ${albumText}`;
 
         artikel.innerHTML = text;
         main.appendChild(artikel);
@@ -225,7 +242,7 @@ function fyllAlbum() {
     }
 }
 
-function show(bildKalla) {
+function show(bildKalla, pos = "50vh") {
     const show = document.querySelector(".show");
     show.innerHTML = "";
 
@@ -233,6 +250,7 @@ function show(bildKalla) {
     bild.setAttribute("src", bildKalla);
     show.appendChild(bild);
     show.classList.add("showing")
+    show.style.top = pos
     showOn = true;
 
     document.body.addEventListener("click", (e) => {
@@ -252,7 +270,8 @@ function visaBilder() {
 
     for (let bild of mainBilder) {
         bild.addEventListener("click", (e) => {
-            show(e.toElement.src);
+            const pos = calcPos(e)
+            show(e.target.src, pos);
         });
     }
 }
@@ -268,7 +287,7 @@ function visaKontakt() {
             if (path.className === "kontakt")
                 finns = true;
         }
-        if (!finns && e.target.outerText !== "CONTACT") {
+        if (!finns && e.target.innerText !== "CONTACT") {
             kontakt.style.visibility = "hidden";
         }
     });
@@ -277,12 +296,13 @@ function visaKontakt() {
 const blockqutoeKoll = document.querySelectorAll("blockquote");
 for (koll of blockqutoeKoll) {
     koll.addEventListener("click", (e) => {
-        const latTitel = e.target.parentElement.children[1].outerText;
+        const latTitel = e.target.parentElement.children[1].innerText;
         visaText(latTitel)
     });
 };
 
 async function visaText(latTitel) {
+    console.log(latTitel)
     latTitel = latTitel.toUpperCase()
     const show = document.querySelector(".main");
     const placeholder = "*MISSING*";

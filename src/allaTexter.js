@@ -1,9 +1,8 @@
-const helaTexter = [
-    {
-        album: "Apologize to all your friends",
-        spår: "01", 
-        titel: "CHLOROFORM",
-        text: `five more to go, thought I was done for <br>
+const helaTexter = [{
+          album: "Apologize to all your friends",
+          spår: "01",
+          titel: "CHLOROFORM",
+          text: `five more to go, thought I was done for <br>
         so I form a row, this may now hurt you <br>
         I only do my job, I don't realize <br>
         my host is king, he gives it to them <br>
@@ -22,10 +21,10 @@ const helaTexter = [
         I'm so scared of the unknown burst`
      },
      {
-        album: "Apologize to all your friends",
-        spår: "02", 
-        titel: "BONES",
-        text: `been this wonderful host
+          album: "Apologize to all your friends",
+          spår: "02",
+          titel: "BONES",
+          text: `been this wonderful host
         bones spread out across and honey I am <br>
         too easy to choke <br>
         when it's sarcastic and self invented <br>
@@ -44,10 +43,10 @@ const helaTexter = [
         when it's sarcastic and self invent`
      },
      {
-        album: "Apologize to all your friends",
-        spår: "03",
-        titel: "EVERYBODY DIES", 
-        text: `I've witnessed the scenes, and I have kissed her in dreams, it seems, <br>
+          album: "Apologize to all your friends",
+          spår: "03",
+          titel: "EVERYBODY DIES",
+          text: `I've witnessed the scenes, and I have kissed her in dreams, it seems, <br>
         I've been having too much fun, the wake of death, seems to surround and bless, <br>
         because now, they're just killing you instead, but it ends everybody... <br>
         deranged by guilt that I have someone for shelter, come, I'm just <br>
@@ -58,10 +57,10 @@ const helaTexter = [
         but it ends, everybody...`
      },
      {
-        album: "Apologize to all your friends",
-        spår: "04",
-        titel: "GET IT RIGHT",
-        text: `I was the numbest enemy, I watched their bonds tweak, <br>
+          album: "Apologize to all your friends",
+          spår: "04",
+          titel: "GET IT RIGHT",
+          text: `I was the numbest enemy, I watched their bonds tweak, <br>
         the circle's sending me a ray, and away she goes <br>
         but in the sense that I endured, I got paid to earn <br>
         for more, but it's the same as always, get it right, <br>
@@ -73,10 +72,10 @@ const helaTexter = [
         get it right this time`
      },
      {
-        album: "Apologize to all your friends",
-        spår: "05",
-        titel: "DAFT ANTHEM",
-        text: `you could cut those feathers, <br>
+          album: "Apologize to all your friends",
+          spår: "05",
+          titel: "DAFT ANTHEM",
+          text: `you could cut those feathers, <br>
         I could strife in dead letters <br>
         it's all the same in here, I'm beginning to mold, <br>
         the walls they talk, they walk their own circles, <br>
@@ -95,10 +94,10 @@ const helaTexter = [
         once more crawl it's a daft anthem only`
      },
      {
-        album: "Apologize to all your friends",
-        spår: "06",
-        titel: "MEMENTO",
-        text: `release your tide <br>
+          album: "Apologize to all your friends",
+          spår: "06",
+          titel: "MEMENTO",
+          text: `release your tide <br>
         let me cross for you, find me some to do <br>
         reverse the mind <br>
         let me work for you, find me some to prove <br>
@@ -118,10 +117,10 @@ const helaTexter = [
         that brings hurt`
      },
      {
-        album: "Apologize to all your friends",
-        spår: "07",
-        titel: "AQUATIC",
-        text: `as of now I watch you frozen <br>
+          album: "Apologize to all your friends",
+          spår: "07",
+          titel: "AQUATIC",
+          text: `as of now I watch you frozen <br>
         this may now cause obsessive frights <br>
         after all what does the soul weigh? <br>
         meanwhile we progress in life <br>
@@ -138,10 +137,10 @@ const helaTexter = [
         we are now putting out the fire`
      },
      {
-        album: "Apologize to all your friends",
-        spår: "08",
-        titel: "SEVER",
-        text: `don't ever confuse me with me <br>
+          album: "Apologize to all your friends",
+          spår: "08",
+          titel: "SEVER",
+          text: `don't ever confuse me with me <br>
         and we are severed from all <br>
         once I get head lobotomized <br>
         I can sit and enjoy <br>
@@ -159,10 +158,10 @@ const helaTexter = [
         all that you are is coming between us`
      },
      {
-        album: "Apologize to all your friends",
-        spår: "09",
-        titel: "VIOLATOR",
-        text: `one more chance to bruise the tool <br>
+          album: "Apologize to all your friends",
+          spår: "09",
+          titel: "VIOLATOR",
+          text: `one more chance to bruise the tool <br>
         in love with every minute he unfolds <br>
         why mocking at my face won't you find you own <br>
         you're all alone, look who's bitching now <br>
@@ -180,10 +179,10 @@ const helaTexter = [
         when you're locking out my space`
      },
      {
-        album: "Apologize to all your friends",
-        spår: "10",
-        titel: "PULSE",
-        text: `give in some confidence to get out more <br>
+          album: "Apologize to all your friends",
+          spår: "10",
+          titel: "PULSE",
+          text: `give in some confidence to get out more <br>
         I can't seem to follow through, exploit the core <br>
         the void is left on hold <br>
         you're cold and without pulse <br>
@@ -197,10 +196,10 @@ const helaTexter = [
         you breath but without pulse`
      },
      {
-        album: "Demo 2",
-        spår: "01",
-        titel: "DEGENERATION",
-        text: `Lie awake from restless dreaming, swift aside won't stop the feeling. <br>
+          album: "Demo 2",
+          spår: "01",
+          titel: "DEGENERATION",
+          text: `Lie awake from restless dreaming, swift aside won't stop the feeling. <br>
         In a heartbeat in a million, can not now that would be stealing. <br>
         Cas I adore you I asure you, was that me now can not see now. <br>
         Step aside while being tortured mother nature stayes deserted. <br>
@@ -215,12 +214,12 @@ const helaTexter = [
         Set on fire set it free I wish you were here to see it bleed. <br>
         Cas I adore you I asure you, disagree not loving me now. <br>
         Step aside while being tortured mother nature stayes deserted.`
-    },
-    {
-        album: "Demo 2",
-        spår: "02",
-        titel: "NOW I KNOW",
-        text: `Now I know I'm gona die alone. <br>
+     },
+     {
+          album: "Demo 2",
+          spår: "02",
+          titel: "NOW I KNOW",
+          text: `Now I know I'm gona die alone. <br>
         The ashtray's filled with fucking lies along. <br>
         I pay the bills but you ain't keeping me so. <br>
         Screwed up does serve a purpose, kill me please. <br>
@@ -247,12 +246,12 @@ const helaTexter = [
  <br>
         Can I say this in a proper way? <br>
         No way will she save me, hailing.`
-    },
-    {
-        album: "Demo 2",
-        spår: "03",
-        titel: "FORGIVE ME",
-        text: `Rosemary you make the waters running everyday. <br>
+     },
+     {
+          album: "Demo 2",
+          spår: "03",
+          titel: "FORGIVE ME",
+          text: `Rosemary you make the waters running everyday. <br>
         Never thought that I'd see in your eyes exactly what to say. <br>
         Make a reservation, no equations, please don't let me be. <br>
         But it is not so bad... <br>
@@ -274,12 +273,12 @@ const helaTexter = [
  <br>
         I see she wants to love me now and seam to want it bad. <br>
         Forgive me for the sympathy and that...`
-    },
-    {
-        album: "Demo 2",
-        spår: "04",
-        titel: "STAYED EMOTIONS",
-        text: `Inbound the audience so sweat, it mustn't matter I'm on my feet. <br>
+     },
+     {
+          album: "Demo 2",
+          spår: "04",
+          titel: "STAYED EMOTIONS",
+          text: `Inbound the audience so sweat, it mustn't matter I'm on my feet. <br>
         Internal warfare on my own, eternal warfare I've atoned. <br>
         Love me the fool and I'm with you, is that all you do now I'm with you. <br>
         It mustn't matter much to me, it mustn't matter how are wee? <br>
@@ -294,12 +293,12 @@ const helaTexter = [
         Why love her to when I need you, why can't I lie here and with you? <br>
  <br>
         And they stayed emotions, endless scared divotions.`
-    },
-    {
-        album: "Demo 2",
-        spår: "05",
-        titel: "EMPATHY",
-        text: `My empathy will take a break... I understand it. <br>
+     },
+     {
+          album: "Demo 2",
+          spår: "05",
+          titel: "EMPATHY",
+          text: `My empathy will take a break... I understand it. <br>
         Then I wont have to act all fake... can you understand that. <br>
         But you are afraid of who I am. <br>
         You could have it all... I care. <br>
@@ -313,12 +312,12 @@ const helaTexter = [
         You say that life is all of this... I can't understand it. <br>
         But I can't be like you and you. <br>
         I'm that stupid fool... Grade me.`
-    },
-    {
-        album: "Demo 2",
-        spår: "06",
-        titel: "DRUGS",
-        text: `As morning burns through my dead eyes. <br>
+     },
+     {
+          album: "Demo 2",
+          spår: "06",
+          titel: "DRUGS",
+          text: `As morning burns through my dead eyes. <br>
         I tremble down to see it by my side...I cannot show you. <br>
         You take the drugs for medicine. <br>
         Those are not bruises they are stains my friend. <br>
@@ -352,12 +351,12 @@ const helaTexter = [
         The poisoned mind of all mankind. <br>
         They serve their kings as well as I serve mine. <br>
         I do not know you... I don't intend to.`
-    },
-    {
-        album: "Dreamcatcher",
-        spår: "01",
-        titel: "BORDERLINE",
-        text: `coming the daze when i walked her ground <br>
+     },
+     {
+          album: "Dreamcatcher",
+          spår: "01",
+          titel: "BORDERLINE",
+          text: `coming the daze when i walked her ground <br>
         my instinct tells me I'm never to be found <br>
    <br>
         dont except me as I am cause I will <br>
@@ -372,10 +371,10 @@ const helaTexter = [
         my inner yells and I do not have the room`
      },
      {
-        album: "Dreamcatcher",
-        spår: "02",
-        titel: "AS WE LEFT",
-        text: `send back all your words <br>
+          album: "Dreamcatcher",
+          spår: "02",
+          titel: "AS WE LEFT",
+          text: `send back all your words <br>
         and tie myself to the curse <br>
         and if you say you're not too bad I will hunt for you <br>
         I cant help how I feel <br>
@@ -393,10 +392,10 @@ const helaTexter = [
         I can be`
      },
      {
-        album: "Dreamcatcher",
-        spår: "03",
-        titel: "DEADBEAT",
-        text: `always have I felt that I'm not worth to be <br>
+          album: "Dreamcatcher",
+          spår: "03",
+          titel: "DEADBEAT",
+          text: `always have I felt that I'm not worth to be <br>
         mended by a love that can't be worshiped <br>
         help me and I'm no different <br>
         help me and I'm so deadbeat <br>
@@ -417,10 +416,10 @@ const helaTexter = [
         care of me I need help`
      },
      {
-        album: "Dreamcatcher",
-        spår: "04",
-        titel: "FOUR",
-        text: `tell me there's nothing more to say <br>
+          album: "Dreamcatcher",
+          spår: "04",
+          titel: "FOUR",
+          text: `tell me there's nothing more to say <br>
         so I may spoil the moment <br>
         tell me your blue skie has fade to grey <br>
         so we may love forever...drenched in our lies <br>
@@ -444,10 +443,10 @@ const helaTexter = [
         concrete order none so dum like you`
      },
      {
-        album: "Dreamcatcher",
-        spår: "05",
-        titel: "UNCHAINED",
-        text: `back from the street once again so cheap I lie wide awake <br>
+          album: "Dreamcatcher",
+          spår: "05",
+          titel: "UNCHAINED",
+          text: `back from the street once again so cheap I lie wide awake <br>
         starting to heel starting to feel now that I killed you <br>
         loving myself pitying myseld when i like to  <br>
         clear out the room so I can fool you, and you all <br>
@@ -472,10 +471,10 @@ const helaTexter = [
         now that you know that I can self glow, wait out`
      },
      {
-        album: "Dreamcatcher",
-        spår: "06",
-        titel: "ASTEROID",
-        text: `put my head to the knees getting rigged for the showdown <br>
+          album: "Dreamcatcher",
+          spår: "06",
+          titel: "ASTEROID",
+          text: `put my head to the knees getting rigged for the showdown <br>
         when I earned the line <br>
         spitting to the beat I'm as cold as I wana be <br>
         splitting the sheets I'm haunting to be one <br>
@@ -496,10 +495,10 @@ const helaTexter = [
         her little star has burned right out of heart`
      },
      {
-        album: "Dreamcatcher",
-        spår: "07",
-        titel: "ALL MY DOLLS",
-        text: `everyday you're the same speaking out stupid ways <br>
+          album: "Dreamcatcher",
+          spår: "07",
+          titel: "ALL MY DOLLS",
+          text: `everyday you're the same speaking out stupid ways <br>
         ways you dont understand <br>
         gets to be part of the think you hate me cas i stink <br>
         you know you were ment to be your own <br>
@@ -525,10 +524,10 @@ const helaTexter = [
         I'm a youth in dispute and I'm only major laid`
      },
      {
-        album: "Dreamcatcher",
-        spår: "08",
-        titel: "ONCE IT TURNS",
-        text: `isn't it time about now to go home <br>
+          album: "Dreamcatcher",
+          spår: "08",
+          titel: "ONCE IT TURNS",
+          text: `isn't it time about now to go home <br>
         and tell your friends about it <br>
         isnt it time to let go <br>
         we both know it won't be the same without it <br>
@@ -557,10 +556,10 @@ const helaTexter = [
         and it will be better now`
      },
      {
-        album: "Dreamcatcher",
-        spår: "09",
-        titel: "MASTERPLAN",
-        text: `have I stumbled with words? <br>
+          album: "Dreamcatcher",
+          spår: "09",
+          titel: "MASTERPLAN",
+          text: `have I stumbled with words? <br>
         corporate eyes since her birth <br>
         you're the one that I want just for the time being <br>
         I will send u the grade u stupid idiot <br>
@@ -582,10 +581,10 @@ const helaTexter = [
         I will speak to the lord but for the time being`
      },
      {
-        album: "Dreamcatcher",
-        spår: "10",
-        titel: "DAMNATION",
-        text: `it's been a while now since I focused on pain <br>
+          album: "Dreamcatcher",
+          spår: "10",
+          titel: "DAMNATION",
+          text: `it's been a while now since I focused on pain <br>
         your rage in me helps <br>
         the words that you spoke made me one step away <br>
         your rage in me <br>
@@ -609,10 +608,10 @@ const helaTexter = [
         fuck you you're eating the sister away`
      },
      {
-        album: "Dreamcatcher",
-        spår: "11",
-        titel: "BEST OF ME",
-        text: `outside my room there's a view <br>
+          album: "Dreamcatcher",
+          spår: "11",
+          titel: "BEST OF ME",
+          text: `outside my room there's a view <br>
         and endless grace and a youth <br>
         you're simply the best of me <br>
    <br>
@@ -633,10 +632,10 @@ const helaTexter = [
         gets thru where I want to.`
      },
      {
-        album: "Dreamcatcher",
-        spår: "12",
-        titel: "BURNED OUT",
-        text: `free, well as good as it came to be <br>
+          album: "Dreamcatcher",
+          spår: "12",
+          titel: "BURNED OUT",
+          text: `free, well as good as it came to be <br>
         in this life my god is for no one else <br>
    <br>
         fly little bee <br>
@@ -650,10 +649,10 @@ const helaTexter = [
         buried again`
      },
      {
-        album: "Dreamcatcher",
-        spår: "13",
-        titel: "COUNTER CLOCKWISE",
-        text: `display you're words <br>
+          album: "Dreamcatcher",
+          spår: "13",
+          titel: "COUNTER CLOCKWISE",
+          text: `display you're words <br>
         another promise went to waste <br>
         let it burn, let me learn from you <br>
         deny all hopes of free will  <br>
@@ -678,10 +677,10 @@ const helaTexter = [
         I've tried to I had to`
      },
      {
-        album: "Life Support",
-        spår: "01",
-        titel: "TUMBLING DOWN",
-        text: `what's the matter with my eyes mom? <br>
+          album: "Life Support",
+          spår: "01",
+          titel: "TUMBLING DOWN",
+          text: `what's the matter with my eyes mom? <br>
         while their looking back at me tonight <br>
         you've been this pretty little demon <br>
         now you're aiming at me <br>
@@ -701,10 +700,10 @@ const helaTexter = [
         now you're aiming at me`
      },
      {
-        album: "Life Support",
-        spår: "02",
-        titel: "ANGEL EYES",
-        text: `he's been in there for ages <br>
+          album: "Life Support",
+          spår: "02",
+          titel: "ANGEL EYES",
+          text: `he's been in there for ages <br>
         locks himself in cages <br>
         I've cut myself on razorblades  <br>
         for too long now <br>
@@ -739,10 +738,10 @@ const helaTexter = [
         same old you`
      },
      {
-        album: "Life Support",
-        spår: "03",
-        titel: "LIFE SUPPORT",
-        text: `on my own I can be everything I want to <br>
+          album: "Life Support",
+          spår: "03",
+          titel: "LIFE SUPPORT",
+          text: `on my own I can be everything I want to <br>
         everything I need <br>
         in my world I feel strong  <br>
         killing me a fortune telling what's wrong <br>
@@ -784,10 +783,10 @@ const helaTexter = [
         undo me well watching as I crumble`
      },
      {
-        album: "Nothing More, Nothing Less",
-        spår: "01",
-        titel: "COULD IT BE LOVE",
-        text: `The future's left up in someone's hands. <br>
+          album: "Nothing More, Nothing Less",
+          spår: "01",
+          titel: "COULD IT BE LOVE",
+          text: `The future's left up in someone's hands. <br>
         I found that hard and irrelevant. <br>
         It fits me somehow I should know. <br>
         The thought about it made me grow. <br>
@@ -796,10 +795,10 @@ const helaTexter = [
         I cannot see love.`
      },
      {
-        album: "Nothing More, Nothing Less",
-        spår: "02",
-        titel: "DARK RAIN",
-        text: `It made me sane, dark rain such a shame. <br>
+          album: "Nothing More, Nothing Less",
+          spår: "02",
+          titel: "DARK RAIN",
+          text: `It made me sane, dark rain such a shame. <br>
         These are but words, haunting and once again. <br>
         I'll kill myself, for me not for you. <br>
         These are but words, haunting and dare. <br>
@@ -812,10 +811,10 @@ const helaTexter = [
         These are but words, haunting and dare.`
      },
      {
-        album: "Nothing More, Nothing Less",
-        spår: "03",
-        titel: "EVENTUALLY",
-        text: `Eventually eventually, time is wrapped up killing me. <br>
+          album: "Nothing More, Nothing Less",
+          spår: "03",
+          titel: "EVENTUALLY",
+          text: `Eventually eventually, time is wrapped up killing me. <br>
         Love is everywhere. <br>
         Let it loose and let it be, my poor girl when will you see? <br>
         Loves her LSD, there ain't no LSD in me <br>
@@ -832,10 +831,10 @@ const helaTexter = [
         They are the ones who wanted this and not me... eventually.`
      },
      {
-        album: "Nothing More, Nothing Less",
-        spår: "04",
-        titel: "GREEDY",
-        text: `Move too lame and fare too tame, I've lost my mind. <br>
+          album: "Nothing More, Nothing Less",
+          spår: "04",
+          titel: "GREEDY",
+          text: `Move too lame and fare too tame, I've lost my mind. <br>
         Still in peaceful dreams of privacy. <br>
         A happy face a thinking race, I've lost my mind. <br>
         You wannabes you think you're free, you've lost your minds. <br>
@@ -865,10 +864,10 @@ const helaTexter = [
         Guess I didn't have the time.`
      },
      {
-        album: "Nothing More, Nothing Less",
-        spår: "05",
-        titel: "MY THOUGHTS",
-        text: `Faking, falling  <br>
+          album: "Nothing More, Nothing Less",
+          spår: "05",
+          titel: "MY THOUGHTS",
+          text: `Faking, falling  <br>
         Under the society <br>
         I hear, morning <br>
         Under the society <br>
@@ -892,10 +891,10 @@ const helaTexter = [
         You should find it yourself, if you follow your heart.`
      },
      {
-        album: "Nothing More, Nothing Less",
-        spår: "06",
-        titel: "REFLECTIONS",
-        text: `When morning comes I hit the brakes, I try to do whatever it takes. <br>
+          album: "Nothing More, Nothing Less",
+          spår: "06",
+          titel: "REFLECTIONS",
+          text: `When morning comes I hit the brakes, I try to do whatever it takes. <br>
         Cause when we are together, see I'm over the edge. <br>
         The mirror is disgusting me, reflections of the history. <br>
         Cause when we are together, see, I'm over the edge... <br>
@@ -912,10 +911,10 @@ const helaTexter = [
         Hey come over the edge.`
      },
      {
-        album: "Nothing More, Nothing Less",
-        spår: "07",
-        titel: "THAT'S FINE",
-        text: `See, I never want to see. <br>
+          album: "Nothing More, Nothing Less",
+          spår: "07",
+          titel: "THAT'S FINE",
+          text: `See, I never want to see. <br>
         Bee, I never want to be. <br>
         Stay, I need you everyday. <br>
         See, you're more than that to me. <br>
@@ -940,16 +939,16 @@ const helaTexter = [
         That's fine, couldn't be friends.`
      },
      {
-        album: "Saviour",
-        spår: "01",
-        titel: "INTROVERTED",
-        text: `*INSTRUMENTAL*`
+          album: "Saviour",
+          spår: "01",
+          titel: "INTROVERTED",
+          text: `*INSTRUMENTAL*`
      },
      {
-        album: "Saviour",
-        spår: "02",
-        titel: "ZOLOST",
-        text: `raise the stage on me <br>
+          album: "Saviour",
+          spår: "02",
+          titel: "ZOLOST",
+          text: `raise the stage on me <br>
         into the wrath I see <br>
         my need surreal <br>
         an endless need <br>
@@ -970,10 +969,10 @@ const helaTexter = [
         into the wrath I see`
      },
      {
-        album: "Saviour",
-        spår: "03",
-        titel: "FRIENDS OF MINE",
-        text: `and again words won't work turn another lie <br>
+          album: "Saviour",
+          spår: "03",
+          titel: "FRIENDS OF MINE",
+          text: `and again words won't work turn another lie <br>
         words won't work as I try... brain-dead anarchy <br>
         and friend how long have I known you now <br>
         how long have I walked... I try not to think of it. <br>
@@ -994,10 +993,10 @@ const helaTexter = [
         kill them kill them, kill the so called friends of mine.`
      },
      {
-        album: "Saviour",
-        spår: "04",
-        titel: "WITH YOU",
-        text: `In a sad place, in a bad case memorial <br>
+          album: "Saviour",
+          spår: "04",
+          titel: "WITH YOU",
+          text: `In a sad place, in a bad case memorial <br>
         I feel trapped here, and I know it's been said before <br>
         but I can't do, what I thought I was to <br>
         I'm a fool, but at least with you <br>
@@ -1018,10 +1017,10 @@ const helaTexter = [
         then I can chew, what I thought was you.`
      },
      {
-        album: "Saviour",
-        spår: "05",
-        titel: "SAVIOUR",
-        text: `when I'm awfully down on the inside she brings a smile to formalize <br>
+          album: "Saviour",
+          spår: "05",
+          titel: "SAVIOUR",
+          text: `when I'm awfully down on the inside she brings a smile to formalize <br>
         I'm captured with downfall... and nothing at all. <br>
         when you're off your sense of proportion... you get so high on yourself <br>
         I am but that wall... forgiving it all <br>
@@ -1042,10 +1041,10 @@ const helaTexter = [
         you're shooting friendly fire... saviour`
      },
      {
-        album: "Theory of Mind",
-        spår: "01",
-        titel: "MY KIND",
-        text: `I scratch my eyes reveal my kind <br>
+          album: "Theory of Mind",
+          spår: "01",
+          titel: "MY KIND",
+          text: `I scratch my eyes reveal my kind <br>
         and pin it down to my requires <br>
         we're off to use and cease them walls <br>
         they give me all that i desire <br>
@@ -1062,10 +1061,10 @@ const helaTexter = [
         I'm sure this all makes sense, but I know what you are`
      },
      {
-        album: "Theory of Mind",
-        spår: "02",
-        titel: "LOW",
-        text: `well I fought systems and keepers, what you gonna do? <br>
+          album: "Theory of Mind",
+          spår: "02",
+          titel: "LOW",
+          text: `well I fought systems and keepers, what you gonna do? <br>
         I lost my funds to the demon, I don't wanna know <br>
         shit will make you fly, just drop me down I'm low <br>
         I sink back to the hole, and I don't wanna know <br>
@@ -1082,10 +1081,10 @@ const helaTexter = [
         I sink back to the hole, and I don't wanna know`
      },
      {
-        album: "Theory of Mind",
-        spår: "03",
-        titel: "NOTION",
-        text: `have you seen? <br>
+          album: "Theory of Mind",
+          spår: "03",
+          titel: "NOTION",
+          text: `have you seen? <br>
         you know what I mean <br>
         when everything, everything you touch goes to waste <br>
         then I scream,  <br>
@@ -1099,10 +1098,10 @@ const helaTexter = [
         oh I'm fed up on my needs`
      },
      {
-        album: "Theory of Mind",
-        spår: "04",
-        titel: "HYPOCHONDRIAC",
-        text: `I prepare to get approved of while you won't let go <br>
+          album: "Theory of Mind",
+          spår: "04",
+          titel: "HYPOCHONDRIAC",
+          text: `I prepare to get approved of while you won't let go <br>
         bright blue skies reforms <br>
         laid me down to make acquaintance with my pros and cons <br>
         righteous lights I give up <br>
@@ -1122,10 +1121,10 @@ const helaTexter = [
         run back for the buzz`
      },
      {
-        album: "Theory of Mind",
-        spår: "05",
-        titel: "ALWAYS WONDERED",
-        text: `they suddenly emerged, scraped it away <br>
+          album: "Theory of Mind",
+          spår: "05",
+          titel: "ALWAYS WONDERED",
+          text: `they suddenly emerged, scraped it away <br>
         until there's nothing left, my dreams fade <br>
         I will rule the earth, basically <br>
         I will make it work, suddenly <br>
@@ -1145,10 +1144,10 @@ const helaTexter = [
         I always wondered.`
      },
      {
-        album: "Theory of Mind",
-        spår: "06",
-        titel: "LET MET OUT",
-        text: `I go to bed and I let it calm the nerves <br>
+          album: "Theory of Mind",
+          spår: "06",
+          titel: "LET ME OUT",
+          text: `I go to bed and I let it calm the nerves <br>
         give me some give me one to fantasize about <br>
         these dreams are yours <br>
    <br>
@@ -1167,10 +1166,10 @@ const helaTexter = [
         to me to me to me`
      },
      {
-        album: "Theory of Mind",
-        spår: "07",
-        titel: "PLAY DEAD",
-        text: `sit alone eyes on the globe, watching tv <br>
+          album: "Theory of Mind",
+          spår: "07",
+          titel: "PLAY DEAD",
+          text: `sit alone eyes on the globe, watching tv <br>
         fantasize of whats and whys, and carry on <br>
         what is she talking about? narcosis <br>
         why aren't we fighting about what to do <br>
@@ -1190,10 +1189,10 @@ const helaTexter = [
         and we'll play dead, faint interest`
      },
      {
-        album: "Theory of Mind",
-        spår: "08",
-        titel: "LIKE ROADKILL",
-        text: `when you take what you're given <br>
+          album: "Theory of Mind",
+          spår: "08",
+          titel: "LIKE ROADKILL",
+          text: `when you take what you're given <br>
         when you start of from loosing ground <br>
         now the surface is bending, my mind turns grey its sad <br>
    <br>
@@ -1216,10 +1215,10 @@ const helaTexter = [
         and if you feel like I feel, so ashamed`
      },
      {
-        album: "Theory of Mind",
-        spår: "09",
-        titel: "THE CALM ONE",
-        text: `if I could land, where would you begin <br>
+          album: "Theory of Mind",
+          spår: "09",
+          titel: "THE CALM ONE",
+          text: `if I could land, where would you begin <br>
         I'd lift you up enchant you <br>
         and sway across the isles <br>
         but I'm back down, how could I resist <br>
@@ -1233,10 +1232,10 @@ const helaTexter = [
         but I'm back down how could I`
      },
      {
-        album: "Theory of Mind",
-        spår: "10",
-        titel: "SUITS",
-        text: `come at yourself you're so unkind <br>
+          album: "Theory of Mind",
+          spår: "10",
+          titel: "SUITS",
+          text: `come at yourself you're so unkind <br>
         every reason against turned the bad hand <br>
         my lack of faith convinced by all <br>
         they'll be coming for you <br>
@@ -1260,10 +1259,10 @@ const helaTexter = [
         there's no reason not to`
      },
      {
-        album: "Theory of Mind",
-        spår: "11",
-        titel: "THESE ARE THE DAYS",
-        text: `it's been awaken, it's evil form <br>
+          album: "Theory of Mind",
+          spår: "11",
+          titel: "THESE ARE THE DAYS",
+          text: `it's been awaken, it's evil form <br>
         it's trivial pursuit has left a mark of thorns <br>
         I've been mistaken I was so sure <br>
         our levitated state would turn its back and walk <br>
@@ -1295,10 +1294,10 @@ const helaTexter = [
         why should I break, let me go`
      },
      {
-        album: "Theory of Mind",
-        spår: "12",
-        titel: "CYANIDE",
-        text: `wont you pass this by <br>
+          album: "Theory of Mind",
+          spår: "12",
+          titel: "CYANIDE",
+          text: `wont you pass this by <br>
         my nutritious friend <br>
         I'm too sick to try <br>
         and I wonder why <br>
@@ -1327,10 +1326,10 @@ const helaTexter = [
         now take your commission`
      },
      {
-        album: "Theory of Mind",
-        spår: "13",
-        titel: "APOLOGIZE TO ALL YOUR FRIENDS",
-        text: `there seems to be a part of me that I am scared of <br>
+          album: "Theory of Mind",
+          spår: "13",
+          titel: "APOLOGIZE TO ALL YOUR FRIENDS",
+          text: `there seems to be a part of me that I am scared of <br>
         restricted by an entity and I'm all shivers <br>
         come again stretch the heart <br>
    <br>
