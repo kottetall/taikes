@@ -5,8 +5,8 @@ window.onload = () => {
     visaBilder();
     slumpCitat("#left");
     slumpCitat("#right");
-};
 
+};
 
 const lista = document.querySelectorAll(".links a");
 lista.forEach((x) => {
@@ -29,9 +29,6 @@ lista.forEach((x) => {
                 break;
             case "albums":
                 fyllAlbum();
-                break;
-            case "contact":
-                visaKontakt();
                 break;
         };
         e.target.blur();
@@ -156,7 +153,7 @@ function fyllImages() {
 
         let thumbs = ""
         for (let i = 0; i < antalBilder; i++) {
-            thumbs += `<a href="#"><img src="img/spelningar/${datum}/tn/a (${i+1}).jpg"></a>`
+            thumbs += `<a href="#"><img src="img/spelningar/${datum}/tn/a (${i + 1}).jpg"></a>`
         }
 
         const text = `<div>
@@ -276,23 +273,6 @@ function visaBilder() {
     }
 }
 
-function visaKontakt() {
-    // lägg till så det funkar med knappar och fokus
-
-    const kontakt = document.querySelector(".kontakt");
-    kontakt.style.visibility = "visible";
-    document.body.addEventListener("click", (e) => {
-        let finns = false;
-        for (path of e.path) {
-            if (path.className === "kontakt")
-                finns = true;
-        }
-        if (!finns && e.target.innerText !== "CONTACT") {
-            kontakt.style.visibility = "hidden";
-        }
-    });
-}
-
 const blockqutoeKoll = document.querySelectorAll("blockquote");
 for (koll of blockqutoeKoll) {
     koll.addEventListener("click", (e) => {
@@ -302,7 +282,6 @@ for (koll of blockqutoeKoll) {
 };
 
 async function visaText(latTitel) {
-    console.log(latTitel)
     latTitel = latTitel.toUpperCase()
     const show = document.querySelector(".main");
     const placeholder = "*MISSING*";

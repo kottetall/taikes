@@ -37,6 +37,7 @@ $logga-height: calc(14vh /2);
 body {
     font-size: 1.5em;
     color: #ddd;
+    min-height: 100vh;
 }
 
 h1,
@@ -55,22 +56,6 @@ button {
     margin: 9px 0px;
     width: 80%;
     padding: 4px 4px;
-}
-
-#submit {
-    min-height: 40px;
-    min-width: 80px;
-    border-radius: 10px;
-    border-color: #000;
-    background: #eee;
-    text-transform: uppercase;
-}
-
-#submit:hover,
-#submit:focus {
-    outline: none;
-    cursor: pointer;
-    border-color: #fff;
 }
 
 .grid-container {
@@ -133,9 +118,8 @@ blockquote span {
 
 
 .main {
-    // margin-top: 15vh;
-    min-height: 110vh;
-    height: $other-main-height;
+    min-height: 100vh;
+    // height: $other-main-height;
     background: rgba(51, 51, 51, 0.9);
     padding: 5%;
     font-size: 0.55em;
@@ -196,10 +180,6 @@ blockquote span {
 .thumbs img {
     float: none;
     margin-left: 2px;
-}
-
-.lat {
-    // padding: 5px;
 }
 
 .lat:hover,
@@ -277,8 +257,6 @@ article img {
     margin: unset;
     width: 100%;
 }
-
-.album .albumlink .albumcover {}
 
 .album .albumlink .albumcoverSpotify {
     position: absolute;
@@ -367,8 +345,8 @@ footer a:focus img {
     display: none;
 }
 
-.show,
-.kontakt {
+.show {
+    display: none;
     position: absolute;
     left: 50vw;
     transform: translateX(-50%);
@@ -377,10 +355,9 @@ footer a:focus img {
     border: 1px solid #7c7c7c;
 }
 
-.kontakt {
-    top: 50vh;
+.showing {
+    display: block;
 }
-
 .showing::after {
     content: "X";
     width: 30px;
@@ -404,24 +381,6 @@ footer a:focus img {
     max-width: 80vw;
     display: block;
 }
-
-.kontakt {
-    visibility: hidden;
-    height: auto;
-    width: auto;
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 5%;
-    border-radius: 4px;
-}
-
-.kontakt div {
-    background: rgba(0, 0, 0, 1);
-    padding: 10%;
-    text-transform: uppercase;
-}
-
-
 
 /* MEDIAQUERY */
 @media (max-width: 600px) {

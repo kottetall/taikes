@@ -10,6 +10,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="src/style.css">
+
+    <script src="src/news_en.js" defer></script>
+    <script src="src/allaTexter.js" defer></script>
+    <script src="src/data.js" defer></script>
+    <script src="src/app.js" defer></script>
     <title>Taikes</title>
 </head>
 
@@ -36,7 +41,6 @@
             <a href="#">gigs</a>
             <a href="#">images</a>
             <a href="#">albums</a>
-            <!-- <a href="#">contact</a> -->
         </div>
 
     </nav>
@@ -56,7 +60,7 @@
             <div id="center" class="grid-item">
 
 
-                <section class="main">
+                <section class="main" id="main">
 
                 </section>
 
@@ -74,26 +78,6 @@
         </div>
 
         <div class="show"></div>
-
-        <div class="kontakt">
-            <div>
-                <h1>Contact</h1>
-                <form action="">
-                    <input type="text" name="name" placeholder="Your name...">
-                    <input type="email" name="email" placeholder="Your email...">
-                    <select id="subject" name="reason for contact">
-                        <option value="" disabled selected hidden>Reason for contact</option>
-                        <option value="booking">booking</option>
-                        <option value="order">order</option>
-                        <option value="feedback">feedback</option>
-                        <option value="bugg report">bugg report</option>
-                    </select>
-                    <textarea name="message" id="message" rows="10"></textarea>
-                    <button id="submit">send</button>
-                    <!-- Lägg till recap!!! -->
-                </form>
-            </div>
-        </div>
     </div>
 
     <footer>
@@ -116,12 +100,6 @@
             <img class="ikoner" src="img/ikoner/youtube.svg" alt="YouTube">
         </a>
     </footer>
-
-
-    <script defer src="src/news_en.js"></script>
-    <script src="src/allaTexter.js"></script>
-    <script src="src/data.js"></script>
-    <script src="src/app.js"></script>
 </body>
 
 </html>
